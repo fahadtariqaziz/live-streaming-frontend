@@ -1,0 +1,22 @@
+/* App.module.css */
+.container {
+    display: flex;
+    background: var(--bg-light);
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;  /* Hide horizontal overflow */
+    overflow-y: auto;    /* Enable vertical scrolling */
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      background: var(--bg-dark); /* Example change for smaller screens */
+    }
+  }
+  
+  .frame {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+  }
+  

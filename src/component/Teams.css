@@ -1,0 +1,35 @@
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.team-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.team-logo {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-details {
+  margin-bottom: 10px;
+}
+
+.team-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+

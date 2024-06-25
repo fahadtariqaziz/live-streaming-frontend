@@ -1,0 +1,43 @@
+.sidebar {
+  width: 250px;
+  height: 1000px; /* Make sidebar full height */
+  position: fixed;
+  background-color: #343a40;
+  color: white;
+}
+
+.sidebar .nav-link.active {
+  background-color: #495057;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+}
+
+.channel-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  margin-left: 10px;
+}
+
+button.sm {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}

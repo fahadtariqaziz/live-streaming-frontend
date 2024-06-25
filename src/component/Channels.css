@@ -1,0 +1,233 @@
+.channels-container {
+    padding: 20px;
+    background-color: rgba(21,23,30,255); /* White background */
+    color: #333;
+    min-height: 100vh;
+}
+
+.channels-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.add-button {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff; /* Bootstrap primary button color */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.channels-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.channel-card {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.channel-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.channel-details {
+    flex-grow: 1;
+}
+
+.channel-name {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.channel-link {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.channel-link:hover {
+    text-decoration: underline;
+}
+
+.channel-header {
+    margin-top: 10px;
+    color: #666;
+}
+
+.channel-header p {
+    margin: 0;
+}
+
+.channel-header a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.channel-header a:hover {
+    text-decoration: underline;
+}
+
+.channel-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-button, .delete-button {
+    padding: 5px 10px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.edit-button {
+    background-color: #2f7b8b;
+}
+
+.edit-button:hover {
+    background-color: #00404d;
+}
+
+.delete-button {
+    background-color: #b0414c;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    width: 400px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup label {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.popup input {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.popup button {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.popup button[type="submit"] {
+    background-color: #007bff;
+}
+
+.popup button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.popup button[type="button"] {
+    background-color: #6c757d;
+    margin-top: 10px;
+}
+
+.popup button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+
+
+@media (max-width: 768px) {
+    .channel-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .channel-logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .channel-details {
+        width: 100%;
+    }
+    
+    .channel-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .edit-button, .delete-button {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .channels-heading {
+        font-size: 1.5em;
+    }
+    
+    .add-button {
+        width: 100%;
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    
+    .channel-card {
+        padding: 10px 5px;
+    }
+    
+    .edit-button, .delete-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .popup {
+        width: 95%;
+    }
+}

@@ -1,0 +1,271 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.banner{
+    
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    background-position: center;
+    background-size: center;
+}
+
+.easyStreamLogo{
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar{
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content h1{
+    font-size: 60px !important;
+    padding-top: -50px !important;
+    padding-bottom: -40px !important;
+    margin-top: -15px !important;
+}
+
+.navbar p{
+    margin-top: -150px;
+    margin-left: -550px;
+    padding-bottom: 150px;
+    font-size: 25px;
+    font-weight: 700;
+}    
+
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    margin-top: -100000px !important;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    position: relative;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #153968;
+    /* background: #ff004f; */
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover:after {
+    width: 100%;
+}
+
+.heading{
+    padding-top: 0px;
+}
+
+
+.logo{
+    width: 160px;
+    margin-top: -10px;
+    margin-left: -280px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+/* li a:hover{
+    background: white;
+    transition: 0.6s;
+}
+.navbar a:hover{
+    color: black;
+} */
+.content{
+    width: 90%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    margin-top: 80px;
+    font-size: 90px;
+    margin-left: -280px;
+    font-weight: 800;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px;
+    
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.buttonLive{
+    margin-left: -280px;
+}
+button:hover{
+    background: rgb(0, 192, 226);
+    transition: 0.5s;
+}
+button:hover{
+    color: white;
+}
+.banner video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    .banner::before {
+        opacity: 0.3; /* Change opacity for small devices */
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        margin-top: 10%;
+        padding: 0 10px;
+    }
+
+    .content h1 {
+        font-size: 1.2em; /* Adjust font size for small devices */
+        margin: 0 0 20px 0; /* Add margin to the bottom */
+    }
+
+    .content button {
+        font-size: 1em; /* Adjust button size for small devices */
+        padding: 10px 20px; /* Adjust padding for better touch targets */
+    }
+
+    .navbar p {
+        margin-top: 10px; /* Adjust margin for small devices */
+        margin-left: 0;
+        padding-bottom: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100px; /* Adjust logo size for small devices */
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .buttonLive {
+        margin-left: 0; /* Adjust button position for small devices */
+    }
+
+    .content {
+        width: 100%; /* Adjust content width for small devices */
+        top: 50%;
+    }
+
+    .content h1 {
+        margin-left: 0; /* Adjust margin for small devices */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .banner::before {
+        opacity: 0.5; /* Change opacity for middle devices */
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar ul li {
+        margin: 10px 15px;
+    }
+
+    .content {
+        margin-top: 20%;
+        padding: 0 20px;
+    }
+
+    .content h1 {
+        font-size: 2em; /* Adjust font size for middle devices */
+        margin: 0 0 30px 0; /* Add margin to the bottom */
+        word-wrap: break-word; /* Ensure text breaks to the next line */
+    }
+
+    .content button {
+        font-size: 1.2em; /* Adjust button size for middle devices */
+        padding: 12px 25px; /* Adjust padding for better touch targets */
+    }
+
+    .navbar p {
+        margin-top: 5px; /* Adjust margin for middle devices */
+        margin-left: 0;
+        padding-bottom: 5px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 120px; /* Adjust logo size for middle devices */
+        margin-top: -5px;
+        margin-left: 0;
+    }
+
+    .buttonLive {
+        margin-left: 0; /* Adjust button position for middle devices */
+    }
+
+    .content {
+        width: 95%; /* Adjust content width for middle devices */
+        top: 50%;
+    }
+
+    .content h1 {
+        margin-left: 0; /* Adjust margin for middle devices */
+    }
+}
